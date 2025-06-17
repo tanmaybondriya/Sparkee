@@ -35,9 +35,9 @@ const AnalyticsDashboard = () => {
   ];
 
   const vehicleTypeData = [
-    { name: "Cars", value: 70, color: "#3B82F6" },
-    { name: "Bikes", value: 20, color: "#10B981" },
-    { name: "SUVs", value: 10, color: "#F59E0B" },
+    { name: "Cars", value: 70, color: "#3B82F6" }, // Blue
+    { name: "Bikes", value: 20, color: "#10B981" }, // Green
+    { name: "SUVs", value: 10, color: "#F59E0B" }, // Yellow
   ];
 
   const topIssues = [
@@ -169,7 +169,7 @@ const AnalyticsDashboard = () => {
                 <YAxis
                   stroke="#bfdbfe"
                   fontSize={12}
-                  tickFormatter={formatCurrency}
+                  tickFormatter={formatCurrency} // Format Y-axis labels
                 />
                 <Tooltip
                   formatter={(value) => [
